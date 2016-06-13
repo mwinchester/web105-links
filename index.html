@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Links and CSS Buttons - Web 105</title>
+    <style>
+    body {
+            color: #212121;
+            font-family: arial, helvetica, sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: fantasy;
+            color: #303F9f;
+        }
+        
+        h2 {
+            font-family: fantasy;
+            color: #3F51B5;
+        }
+        
+        a {
+            font-size 1.5em;
+            font-weight: 800;
+            color: #303F9f;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #FF4081;
+            text-decoration: underline;
+        }
+        
+        a:visited {
+            color: #727272;
+        }
+        
+        nav {
+            text-align: center;
+        }
+        
+        nav a {
+            padding: 5px 10px;
+            margin: 5px 15px;
+            background: #303F9F;
+            border: 2px #303F9f solid;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        
+        nav a:visited {
+            color: #FFFFFF;
+        }
+        
+        nav a:hover {
+            background: #FFFFFF;
+            color: #303F9F;
+            text-decoration: none;
+        }
+        
+        .container {
+            border: .5px solid #B6B6B6;
+            padding: 15px;
+            margin: 15px auto;
+            max-width: 960px;
+            min-height: 50px;
+            border-radius: 3px;
+            clear: both;
+            /* clears floats used in images*/
+            overflow: auto;
+            /* fixes a problem caused by using floats */
+        }
+        
+        li {
+            line-height: 2;
+        }
+        
+        p {
+            padding: 0 15px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            vertical-align: middle;
+            text-align: center;
+        }
+        /* This is just for my representing code */
+        
+        code {
+            background: rgba(176, 190, 197, .1);
+            color: 263238;
+            font-size: 1.2em;
+            padding: 5px;
+            line-height: 2;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header class="container" id="top">
+        <h1>Links and CSS Buttons</h1>
+        <nav>
+            <a href="#images">Images</a>
+            <a href="#color">Color</a>
+            <a href="#programming">Programming</a>
+            <a href="#usability">Usability</a>
+            <a href="#image">Design</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container" id="images">
+            <h2>Images</h2>
+            <a href="http://web115.mccdgm.net/" target="_blank"><img src="star.png" alt="star" style="float: left; padding:  15px;"></a>
+            <p>It is easy to use an image in place of text for a link. You just nest the image tag inside of the anchor tag where you would normally put text.</p>
+
+            <p>Clicking the star will take you to the course page for Web 115. It used to be common to create image buttons for links, now it is standard practice to use CSS to create button effects.</p>
+
+            <code>&lt;a href&#61; &quot;http&#58;&#47;&#47;web115.mccdgm.net&#47;&quot;&gt; <br/> &lt;img src&#61;&quot;star.png&quot; alt&#61;&quot;star&quot; style&#61;&quot;float&#58; left&#59; padding&#58;15px&#59;&quot;&gt;<br/> &lt; &#47;a &gt;</code>
+        </div>
+        <div class="container" id="color">
+            <h2>Color Links</h2>
+            <ul>
+                <li>
+                    <a href="http://htmlcolorcodes.com/" target=_blank>HTML Color Codes</a>
+                    <p>Can also generate color schemes and help identify named HTML colors</p>
+                </li>
+                <li>
+                    <a href="https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg?hl=en" target=_blank>ColorPick Eyedropper for Chrome</a>
+                </li>
+                <li>
+                    <a href="https://color.adobe.com/" target=_blank>Adobe Color</a>
+                    <p>Adobe's color tool will let you pick a color scheme from a photo</p>
+                </li>
+                <li>
+                    <a href="http://paletton.com/" target=_blank>Paletton</a>
+                    <p>Similar to adobe color but more tones/ shading</p>
+                </li>
+            </ul>
+            <p><a href="#top">top</a></p>
+        </div>
+
+        <div class="container" id="programming">
+            <h2>Programming Links</h2>
+            <ul>
+                <li>
+                    <a href="https://www.codecademy.com/learn/web" target=_blank>Code Academy</a>
+                    <br/>
+                </li>
+                <li>
+                    <a href="http://www.theodinproject.com/web-development-101" target=_blank>The Odin Project</a>
+                </li>
+                <li>
+                    <a href="http://www.lynda.com/" target=_blank>Lynda.com</a>
+                    <br/>
+                </li>
+                <li>
+                    <a href="http://www.w3schools.com/" target=_blank>W3 Schools</a>
+                    <br/>
+                </li>
+            </ul>
+            <p><a href="#top">top</a></p>
+        </div>
+
+        <div class="container" id="usability">
+            <h2>Usability Links</h2>
+            <ul>
+                <li>
+                    <a href="http://www.checkmycolours.com/" target=_blank>Check My Colors</a>
+                    <br/>
+                </li>
+                <li>
+                    <a href="http://wave.webaim.org/" target=_blank>Wave</a>
+                    <p>Web accessiblity evaluation</p>
+                </li>
+                <li>
+                    <a href="http://www.color-blindness.com/coblis-color-blindness-simulator/" target=_blank>Coblis</a>
+                    <p>Color Blindness Simulater</p>
+                </li>
+                <li>
+                    <a href="http://www.usability.gov/" target=_blank>Usability.gov</a>
+                    <p>Improving the user experience</p>
+                </li>
+            </ul>
+            <p><a href="#top">top</a></p>
+        </div>
+
+        <div class="container" id="image">
+            <h2>Image Resources</h2>
+            <ul>
+                <li>
+                    <a href="https://pixabay.com/" target=_blank>Pixabay</a>
+                    <p>Royalty free images for use without attribution</p>
+                </li>
+                <li>
+                    <a href="https://commons.wikimedia.org/wiki/Main_Page" target=_blank>Wikimedia Commons</a>
+                    <p>A database of freely useable media files to which anyone can contribute</p>
+                </li>
+
+            </ul>
+            <p><a href="#top">top</a></p>
+        </div>
+
+    </main>
+    <footer class="container"><a href="../index.html">Web 105 Home</a></footer>
+</body>
+
+</html>
